@@ -1,4 +1,4 @@
-# 📚 My Entertainment Hub (Mini-Biblioteca de Entretenimento)
+# 📚 My Story Vault (Mini-Biblioteca de Entretenimento)
 
 > Um **hub pessoal** para rastrear, organizar e compartilhar sua coleção de filmes, séries, animes, livros, manhwas, mangás e jogos — com controle de progresso, avaliações, comentários e muito mais.
 
@@ -40,8 +40,8 @@ Este projeto é uma aplicação **pessoal (e Open Source)** para centralizar sua
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/seu-usuario/my-entertainment-hub.git
-cd my-entertainment-hub
+git clone https://github.com/MrMrg69/story-vault.git
+cd story-vault
 
 # 2. Instale as dependências
 npm install
@@ -62,6 +62,9 @@ app.vue
 pages/
 ├── library/
 │   └── index.vue
+│       └── [type]
+│           └── index.vue 
+├── index.vue
 components/
 ├── ui/
 │   ├── Button.vue
@@ -69,7 +72,9 @@ components/
 │   └── Modal.vue
 ├── items/
 │   ├── ItemCard.vue
-│   └── MovieCard.vue
+├── layout/
+│   ├── Navbar.vue
+│   └── Sidebar.vue
 stores/
 └── items.ts
 types/
@@ -78,7 +83,7 @@ composables/
 └── useItems.ts
 assets/
 └── css/
-    └── tailwind.css
+│   └── tailwind.css
 nuxt.config.ts
 ```
 
